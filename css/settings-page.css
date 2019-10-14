@@ -1,0 +1,100 @@
+.container-tab-contents
+{
+	display: none;
+	margin-top:15px !important;
+}
+.nav.nav-tabs li a.bootstrap-tab-link, input
+{
+	text-decoration: none !important;
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+label
+{
+	margin:0;
+}
+label.radio-label
+{
+	margin-left: 5px;
+}
+button.button.save-btn[type=submit]
+{
+	padding: 3px 50px;
+	height: unset;
+	display: flex;
+	margin-left: auto;
+}
+.wrap
+{
+	transition: 1s all;
+}
+.wrap-overlay
+{
+	transition: 0.4s all;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display: flex;
+	justify-content: center;
+	margin-top:150px;
+}
+.wrap-overlay > img
+{
+	width: 150px;
+	height: 150px;
+}
+.nav.nav-tabs li .bootstrap-tab-link
+{
+	transition: 0.35s all;
+}
+.nav-tabs-container
+{
+	position: relative;
+}
+.arrows.dashicons
+{
+	opacity: 0;
+	pointer-events: none;
+
+	position: absolute;
+	z-index: 10;
+	top:0;
+	bottom:0;
+	margin:auto;
+	cursor:pointer;
+	background-color: #eee;
+	border:1px solid silver;
+	line-height: 0.9;
+}
+.arrows.dashicons.dashicons-arrow-right
+{
+	right:-10px;
+}
+.arrows.dashicons.dashicons-arrow-left
+{
+	left:-10px;
+}
+@media screen and (max-width: 1199px)
+{
+	.arrows.dashicons
+	{
+		opacity: 1;
+		pointer-events: all;
+	}
+	.nav-tabs
+	{
+		scroll-behavior: smooth;
+		overflow: scroll;
+    	display: flex;
+    	white-space: nowrap;
+
+    	-ms-overflow-style: none;
+   		scrollbar-width: none;
+	}
+	.nav-tabs::-webkit-scrollbar 
+	{ 
+	    display: none;
+	}
+}
