@@ -113,6 +113,10 @@ class Settings
 		{
 		    $phpmailer->action_function = 'EmailSettings\Functions::email_settings_mail_action';
 		} );
+		/*
+			Add bootstrap support for wp_editor
+		*/
+		add_action( 'admin_init', 'EmailSettings\Actions::add_bootstrap_to_wp_editor');
 
 
 	}
